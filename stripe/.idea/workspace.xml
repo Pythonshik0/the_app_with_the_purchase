@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35748e69-be1c-48c4-af88-f90e9ee1e041" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LtzWdlZM5wLBqcUkDLAqwxD6l2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/stripe",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\test-task-stripe-master\project" />
+      <recent name="C:\Users\User\PycharmProjects\test-task-stripe-master\project\products" />
+      <recent name="C:\Users\User\PycharmProjects\test-task-stripe-master\project\project" />
+      <recent name="C:\Users\User\PycharmProjects\test-task-stripe-master" />
+      <recent name="D:\Django\test_task_stripe\project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="project/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="project/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.project/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35748e69-be1c-48c4-af88-f90e9ee1e041" name="Changes" comment="" />
+      <created>1676705200669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676705200669</updated>
+      <workItem from="1676705202144" duration="3712000" />
+      <workItem from="1676802561188" duration="16799000" />
+      <workItem from="1677412689712" duration="183000" />
+      <workItem from="1680408654609" duration="3992000" />
+      <workItem from="1680519254011" duration="1983000" />
+      <workItem from="1680623729408" duration="1620000" />
+      <workItem from="1705387708665" duration="786000" />
+      <workItem from="1705389527439" duration="6969000" />
+      <workItem from="1705471889192" duration="362000" />
+      <workItem from="1705472431247" duration="1670000" />
+      <workItem from="1706260587466" duration="5000" />
+      <workItem from="1708956842932" duration="8773000" />
+      <workItem from="1708965963942" duration="998000" />
+      <workItem from="1708966989748" duration="2230000" />
+      <workItem from="1709015176106" duration="4702000" />
+      <workItem from="1709020021471" duration="342000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy item</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h3, h4, h5 {
+            color: #333;
+            margin-top: 5px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div style="text-align: center">
+        <h3>Название: {{ product_item.name }}</h3>
+        <h4>Описание: {{ product_item.description }}</h4>
+        <h5>Цена: $ {{ product_item.price }}.00</h5>
+        <button type="button" id="checkout-button">Buy</button>
+    </div>
+</section>
+
+{% csrf_token %}
+
+<script type="text/javascript">
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    let stripe = Stripe("{{ pk_test_51OZ7YYIrdHa24etg9yEHj16yNdaAqgAmALRZ96OGaXXbRm9Koa1oM0pPYbH8qop7UHK3OyPqmP7X8ZG8BsrFXab800LMrNZKq9 }}");
+    let checkoutButton = document.getElementById("checkout-button");
+    checkoutButton.addEventListener("click", function() {
+        fetch(
+            "{% url 'create-checkout-session' product_item.pk %}",
+            {
+                method: "GET",
+                headers: {
+                    'X-CSRFToken': csrftoken
+                }
+            })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(session) {
+                return stripe.redirectToCheckout({sessionId: session.id});
+            })
+            .then(function(result) {
+                if (result.error) {
+                    alert(result.error.message);
+                }
+            })
+            .catch(function(error) {
+                console.error("Error:", error);
+            });
+    });
+</script>
+</body>
+</html>
